@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href='http://fonts.googleapis.com/css?family=Neuton|Montserrat' rel='stylesheet' type='text/css'>
+
+    <title>Mobile Framework</title>
+</head>
+
+<body>
+    <div data-role="header">
+        <a href="#" data-role="pagelink" data-rel="back"></a>
+        <h1>Mobile App</h1>
+    </div>
+    <nav>
+        <ul class="tabs">
+            <li class="tab" id="home-icon">
+                <a href="#home" data-role="pagelink" class="activetab"></a>
+            </li>
+            <li class="tab" id="location-icon">
+                <a href="#stuff" data-role="pagelink" class=""></a>
+            </li>
+            <li class="tab" id="contact-icon">
+                <a href="#other" data-role="pagelink" class=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div data-role="page" id="home" class="">
+        <div data-role="content">
+            <h3>Mobile Framework</h3>
+            <p>This is a mobile framework using HTML5, CSS3, and Javascript. Using a single page HTML file, tabs are incorporated to create pages with transitions to move between them.
+                <br>
+                <br> Geolocation API is used to display a google static image of the users current location.
+                <br>
+                <br> The contacts page uses the Cordova Contacts API which fetches and displays one random contact from the contacts on the mobile device.</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="stuff" class="hidden">
+        <div data-role="content">
+            <h3>Geolocation</h3>
+            <p>Where are you located?</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="other" class="hidden">
+        <div data-role="content">
+            <h3 id="contactInfo">Contacts</h3>
+        </div>
+    </div>
+
+    <div data-role="footer">
+        <p>Copyright &copy; Kari Ball</p>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    <script src="js/geolocation.js"></script>
+</body>
+
+</html>
