@@ -1,13 +1,9 @@
 //document.addEventListener("DOMContentLoaded", function geo(){
 document.addEventListener("deviceready", function geo(){
-
-    if (navigator){
-    alert("hgkgk");
-        }
     
     if( navigator.geolocation ){ 
         //code goes here to find position
-        var params = {enableHighAccuracy: false, timeout:3600, maximumAge:6000000};
+        var params = {enableHighAccuracy: false, timeout:360000, maximumAge:6000000};
         //enableHighAccuracy means try to use GPS and drain the battery
         //for improved accuracy within a few meters.
         //maximum age is how long to cache the location info
